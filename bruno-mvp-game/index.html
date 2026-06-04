@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coastal Break Run</title>
+  </head>
+  <body>
+    <div id="hud" aria-label="Driving telemetry">
+      <div class="brand">Coastal Break Run</div>
+      <div class="run-row">
+        <span>Status</span>
+        <strong data-run>Press W</strong>
+      </div>
+      <div class="speed"><span data-speed>0</span><small>km/h</small></div>
+      <div class="nitro-row">
+        <span>Nitro</span>
+        <div class="nitro-track"><div class="nitro-fill" data-nitro></div></div>
+      </div>
+      <div class="time-grid">
+        <span>Time</span><strong data-timer>0:00.000</strong>
+        <span>Best</span><strong data-best>--:--.---</strong>
+      </div>
+      <div class="status-grid">
+        <span>Grip</span><strong data-drift>grip</strong>
+        <span>Feel</span><strong data-feel>clean grip</strong>
+      </div>
+      <div class="progress-track"><div class="progress-fill" data-progress></div></div>
+      <div class="controls">WASD/arrows drive · Space nitro · Shift drift · R reset</div>
+    </div>
+    <div id="touch-controls" aria-label="Driving controls">
+      <div class="touch-cluster">
+        <button data-hold="left" aria-label="Turn left">←</button>
+        <button data-hold="right" aria-label="Turn right">→</button>
+      </div>
+      <div class="touch-cluster">
+        <button data-hold="brake" aria-label="Brake">Brake</button>
+        <button data-hold="drift" aria-label="Drift">Drift</button>
+      </div>
+      <div class="touch-cluster">
+        <button data-hold="nitro" aria-label="Nitro">Nitro</button>
+      </div>
+    </div>
+    <div id="message" class="show">
+      <strong data-message-title>Coastal Break Run</strong>
+      <span data-message-detail>Countdown starts automatically. W/↑ to drive when it drops.</span>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
